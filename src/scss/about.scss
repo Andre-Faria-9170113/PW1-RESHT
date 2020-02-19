@@ -1,0 +1,33 @@
+.about {
+    padding-top: $navbar-height;
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center;
+
+    .container {
+        padding-top: 1em;
+        padding-bottom: 2em;
+    
+        .columns {
+            padding-top: inherit;
+            padding-bottom: inherit;
+
+            .column.is-family-sans-serif {
+                line-height: 2.5;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .about {
+        background-size: 100% auto;
+        background-position: 0% 0%;
+    }
+
+    .column:last-child {
+        justify-content: space-around;
+    }
+}

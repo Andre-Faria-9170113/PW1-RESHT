@@ -1,0 +1,44 @@
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+.ra-brand {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 24px;
+    outline-color: $primary;
+
+    &:hover {
+        color: hsl(0, 0%, 96%);
+    }
+}
+
+.navbar-item {
+    outline-color: $primary !important;
+
+    &.has-dropdown {
+        &:hover {
+            .icon {
+                color: $navbar-item-hover-color;
+            }
+
+            .ra-name {
+                color: $scheme-invert-bis;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .ra-brand {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 0;
+    }
+}

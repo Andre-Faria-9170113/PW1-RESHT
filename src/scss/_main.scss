@@ -1,0 +1,50 @@
+// importar fonts
+@import url("https://fonts.googleapis.com/css?family=Domine&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cardo&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400&display=swap');
+
+// substituir as variaveis predefenidas da Bulma
+// fonts
+$family-primary: "Domine", serif;
+$family-secondary: "Cardo", serif;
+$family-sans-serif: "Work Sans", sans-serif;
+// cores
+$primary: hsl(74, 50%, 54%);
+// navbar
+$navbar-height: 5rem;                               // vvvvv Nome da cor na Bulma vvvvv
+$navbar-item-color: hsl(0, 0%, 96%);                        // white-ter
+$navbar-item-hover-color: hsl(0, 0%, 14%);                  // black-ter
+$navbar-dropdown-border-top: 2px solid hsl(0, 0%, 14%);     // black-ter
+$navbar-divider-background-color: hsl(0, 0%, 14%);          // black-ter
+// footer
+$footer-background-color: hsl(0, 0%, 21%);                  // grey-darker
+// form
+$input-color: hsl(0, 0%, 86%);                              // grey-lighter
+$input-background-color: hsl(0, 0%, 14%);                   // black-ter
+$input-border-color: hsl(0, 0%, 71%);                       // grey-light
+$input-hover-color: hsl(0, 0%, 96%);                        // white-ter
+$input-hover-border-color: hsl(0, 0%, 96%);                 // white-ter
+$input-focus-border-color: $primary;
+$input-arrow: hsl(0, 0%, 71%);                              // grey-light
+// box
+$box-background-color: hsl(0, 0%, 14%);                     // black-ter
+// menu
+$menu-item-color: hsl(0, 0%, 71%);                          // grey-light
+$menu-item-active-background-color: $primary;
+//table
+$table-head-background-color: hsl(0, 0%, 7%);
+$table-head-cell-color: hsl(0, 0%, 96%);
+$table-foot-background-color: hsl(0, 0%, 7%);
+$table-foot-cell-color: hsl(0, 0%, 96%);
+$table-background-color: hsl(0, 0%, 21%);
+$table-row-hover-background-color: hsl(0, 0%, 14%);
+$table-cell-padding: 0.5em 0.5em;
+//pagination
+$pagination-current-border-color: $primary;
+
+// importar Bulma
+@import "~bulma/bulma.sass";
+
+// importar fontawesome
+@import url("~@fortawesome/fontawesome-free/css/solid.min.css");
+@import url("~@fortawesome/fontawesome-free/css/fontawesome.min.css");
